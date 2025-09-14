@@ -2,7 +2,7 @@
 
 **A tiny, highly simplified Rust input helper**
 
-**Version:** 0.2.0
+**Version:** 0.2.1
 
 A minimal library that provides two helpers for reading user input from stdin:
 - `single_line()` — returns the raw line as a `String`.
@@ -76,14 +76,14 @@ println!("got int: {}", n);
 
 This crate is simple by design and the current `number()` implementation has a few rough edges. Below are short, easy-to-understand fixes you can apply as tiny edits.
 
-1. **Loop condition is reversed — causes the loop not to run at all.**
+~1. **Loop condition is reversed — causes the loop not to run at all.**~
 
 ```diff
 - while loop_variable > word_length {
 + while loop_variable < word_length {
 ```
 
-2. **Character check logic is inverted.**
+~2. **Character check logic is inverted.**~
 - Current code treats *digits* as invalid. Fix by negating the check.
 
 ```diff
@@ -97,7 +97,7 @@ This crate is simple by design and the current `number()` implementation has a f
 + }
 ```
 
-3. **`loop_variable` never increments → infinite loop.**
+~3. **`loop_variable` never increments → infinite loop.**~
 
 Add this at the end of the loop body:
 

@@ -1,6 +1,6 @@
 [package]
 name = "from-user"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 authors = ["Devanshu Sharma <sharma.devanshu089@gmail.com>"]
 description = "A small Rust crate for taking input. Highly Simplified"
@@ -10,3 +10,4 @@ license = "MIT OR Apache-2.0"
 
 #v0.1.0 Basic Working
 #v0.2.0 Added ability for number
+#v0.2.1 Fixed Issues #1,#2,#3.

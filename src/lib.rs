@@ -24,12 +24,13 @@ pub fn number() -> i32{
     // Checking if it is a String one by one
     let word_length = string_to_return.len();
     let mut loop_variable = 0;
-    while loop_variable > word_length {
+    while loop_variable < word_length {
         let char_to_check = string_to_return.chars().nth(loop_variable).expect(SRS);
-        if char_to_check.is_ascii_digit() {
+        if !char_to_check.is_ascii_digit() {
             println!("Please enter a Numerics only");
             return number();
-        }        
+        }
+        loop_variable += 1;
     }
     //Conversion of string to int
     let int_to_return = match string_to_return.trim().parse() {
