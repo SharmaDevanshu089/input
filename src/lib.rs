@@ -1,16 +1,5 @@
 use std::io;
 
-#[cfg(test)]
-
-mod tests {
-
-    use super::*;
-     #[test]
-     fn print_in_test(){
-        let mut s = get_in();
-        println!("{}", s);
-     }
-}
 
 
 pub fn get_in() -> String{
