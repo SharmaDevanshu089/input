@@ -1,7 +1,5 @@
 use std::io;
 
-
-
 pub fn get_in() -> String{
     let mut flag = "ok";
     let mut string_to_get_in = String::new();
