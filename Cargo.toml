@@ -1,13 +1,16 @@
 [package]
 name = "from-user"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2024"
 authors = ["Devanshu Sharma <sharma.devanshu089@gmail.com>"]
 description = "A small Rust crate for taking input. Highly Simplified"
 license = "MIT OR Apache-2.0"
-
+keywords = ["input", "cli", "basic" ]
+categories = ["command-line-utilities"]
+repository = "https://github.com/SharmaDevanshu089/input"
 [dependencies]
 
 #v0.1.0 Basic Working
 #v0.2.0 Added ability for number
 #v0.2.1 Fixed Issues #1,#2,#3.
+#v0.2.2 Basic Readme Fixes
