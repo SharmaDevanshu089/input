@@ -32,6 +32,12 @@ pub fn number() -> i32{
         }        
     }
     //Conversion of string to int
-    let int_to_return = string_to_return.trim().parse().unwrap();
+    let int_to_return = match string_to_return.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Please Enter a Valid Number");
+            number();
+        },
+    };
     return int_to_return;
 }

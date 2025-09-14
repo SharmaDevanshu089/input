@@ -1,5 +1,5 @@
 mod lib;
 fn main(){
-    let s = lib::get_in();
+    let s = lib::number();
     println!("{}",s);
 }
