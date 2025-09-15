@@ -2,7 +2,7 @@
 
 **A tiny, highly simplified Rust input helper**
 
-**Version:** 0.2.2
+**Version:** 0.2.3
 
 A minimal library that provides two helpers for reading user input from stdin:
 - `single_line()` — returns the raw line as a `String`.

@@ -1,3 +1,5 @@
+// Version 0.2.3
+
 use std::{i32, io};
 
 const SRS:&str = "There has been a Serious Error with Liberary of Input. Please Contact the Developers";
@@ -18,7 +20,7 @@ pub fn number() -> i32{
     let mut string_to_get_in = String::new();
     let mut string_to_return = String::new();
     match io::stdin().read_line(&mut string_to_get_in){
-        Ok(_) => string_to_return = string_to_get_in,
+        Ok(_) => string_to_return = string_to_get_in.trim(),
         Err(_) => _flag = "er",
     }
     // Checking if it is a String one by one
