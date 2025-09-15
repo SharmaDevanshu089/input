@@ -20,7 +20,7 @@ pub fn number() -> i32{
     let mut string_to_get_in = String::new();
     let mut string_to_return = String::new();
     match io::stdin().read_line(&mut string_to_get_in){
-        Ok(_) => string_to_return = string_to_get_in.trim(),
+        Ok(_) => string_to_return = string_to_get_in.trim().to_string(),
         Err(_) => _flag = "er",
     }
     // Checking if it is a String one by one
