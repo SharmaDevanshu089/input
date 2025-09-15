@@ -18,7 +18,7 @@ Add the crate to your `Cargo.toml` (when published on crates.io):
 
 ```toml
 [dependencies]
-from-user = "0.2"
+from-user = "0.2.3"
 ```
 
 > Note: when using the crate in Rust code, the crate name uses an underscore in `use` paths (hyphens become underscores):
